@@ -1,0 +1,116 @@
+/* common styles for all tags */
+html{
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: monospace;
+  font-size: 20px ;
+}
+body{
+  margin: 0px 0px;
+}
+.Container{
+  margin: 5px;
+  margin-top: 80px;
+  margin-left: 15%;
+  margin-right:15%;
+  text-align: center;
+  display: block;
+}
+
+
+
+
+
+
+
+/* Style for top navigation bar */
+nav{
+  background-color: #000000d8;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.Brand{
+  flex: 1;
+  margin-left: 30px;
+  font-size: 17px;
+}
+.NavigationItems{
+  margin-right: 30px;
+}
+ul{
+  list-style-type: none;
+}
+.NavigationItems li{
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: 11px;
+  font-size: 17px;
+  transition: ease 0.3s font-size,ease 0.3s padding-top;
+}
+.NavigationItems li:hover{
+  font-size: 23px;
+  padding-top:6px;
+}
+a:any-link{
+  color: #909090;
+  text-decoration: none;
+  transition: ease 0.3s color;
+}
+a:any-link:hover{
+  color:#ffffff;
+}
+
+
+
+
+/* styles for content container */
+.ContentContainer{
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+  border-radius: 10px;
+  background-color: #101010;
+  padding: 70px 50px;
+  display: flex;
+  flex-direction: row;
+}
+.HeadingImageContainer{
+  width: 200px;
+  height: 200px;
+  transition:ease 0.3s filter;
+}
+.HeadingContainer{
+  line-height: 1.5;
+}
+.ItemImageContainer img{
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  transition: ease 0.3s filter;
+}
+.ItemImageContainer img:hover{
+  filter: opacity(0.6);
+}
+
+.OverviewContainer{
+  flex: 1;
+  padding-left: 40px;
+  line-height: 1.5;
+}
+.OverviewContent p{
+  text-align: justify;
+  padding: 0px 20px
+}
+.ListItems{
+  list-style-type: disc;
+  text-align: justify;
+}
+.HeadingSeperator{
+  width: 30%;
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
+}
