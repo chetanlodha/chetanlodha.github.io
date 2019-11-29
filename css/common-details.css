@@ -17,12 +17,6 @@ body{
   display: block;
 }
 
-
-
-
-
-
-
 /* Style for top navigation bar */
 nav{
   background-color: #000000d8;
@@ -62,9 +56,6 @@ a:any-link{
 a:any-link:hover{
   color:#ffffff;
 }
-
-
-
 
 /* styles for content container */
 .ContentContainer{

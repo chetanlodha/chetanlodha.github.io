@@ -16,12 +16,6 @@ body{
   text-align: center;
 }
 
-
-
-
-
-
-
 /* Style for top navigation bar */
 nav{
   background-color: #000000d8;
@@ -62,9 +56,6 @@ li :any-link:hover{
 }
 
 
-
-
-
 /* Styles for Profile Section */
 .Profile{
   padding:30px 0px;
@@ -97,11 +88,6 @@ li :any-link:hover{
   color: rgba(255, 255, 255, 0.8);
 }
 
-
-
-
-
-
 /* styles for profile bio section */
 .ProfileBioHello{
   font-size: 30px;
@@ -124,11 +110,6 @@ li :any-link:hover{
   font-size: 20px;
   color: #e0e0e0;
 }
-
-
-
-
-
 
 /* styles for skills section */
 .HeadingSeperator{
@@ -276,11 +257,6 @@ li :any-link:hover{
   display: inline-block;  
 }
 
-
-
-
-
-
 /* styles for portfolio section */
 .PortfolioItemsContainer{
   display: inline-block;
@@ -302,8 +278,6 @@ li :any-link:hover{
 .PortfolioItem:hover{
   filter: opacity(0.6);
 }
-
-
 
 /* styles form contact us section */
 .ContactUsContainer ul li{
