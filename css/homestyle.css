@@ -80,8 +80,10 @@ li :any-link:hover{
   display: inline-block;
 }
 .ProfileImageContainer img{
-  width: 250px;
-  height: 334px;
+  width: 280px;
+  height: 364px;
+  position: relative;
+  top:-25px;
 }
 .NameHeading{
   font-size: 40px;
