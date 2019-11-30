@@ -47,11 +47,12 @@ ul{
   font-size: 23px;
   padding-top:6px;
 }
-li a:any-link{
-  color: #e0e0e0;
+a:any-link{
+  color: #b4b4b4;
   text-decoration: none;
+  transition: ease 0.3s color;
 }
-li :any-link:hover{
+a:any-link:hover{
   color:#ffffff;
 }
 
@@ -257,9 +258,10 @@ li :any-link:hover{
 
 /* styles for portfolio section */
 .PortfolioItemsContainer{
-  display: inline-block;
+  display: flex;
   flex-direction: column;
   padding: 30px 0px;
+  justify-content: center;
 }
 .PortfolioItem{
   width: 500px;
@@ -301,6 +303,179 @@ li :any-link:hover{
   margin-top: -20px;
 }
 
+/* media query */
+@media(max-width:992px){
+  .Container{
+    margin-top:150px
+  }
+  /* nav bar styles */
+  nav{
+    flex-direction: column;
+  }
+  .NavigationItems{
+    margin-right: 0px;
+  }
+  .Brand{
+    margin-left:0px;
+  }
+  .Brand h2{
+    font-size: 50px;
+    text-align: center;
+    margin:0px;
+    margin-top: 20px;
+  }
+  ul{
+    text-align: center;
+    padding-left: 0px;
+  }
+  .NavigationItems li{
+    font-size: 32px;
+  }
+  .NavigationItems li:hover{
+    font-size: 38px;
+  }
+  /* profile styles */
+  .ProfileImageContainer{
+    width: 550px;
+    height: 550px;
+    border-radius:100%;
+  }
+  .ProfileImageContainer img{
+    width: 620px;
+    height: 800px;
+    margin-top: -50px;
+  }
+  
+/* Styles for Profile Section */
 
+.NameHeading{
+  font-size: 60px;
+}
+.NameSubHeading{
+  font-size: 45px;
+}
 
+/* styles for profile bio section */
+.ProfileBioHello{
+  font-size: 30px;
+}
+.ProfileBioContent{
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.7;
+}
+.Bold{
+  font-weight: bold;
+  font-size: 22px;
+  color: #e0e0e0;
+}
+/* styles for skills section */
+.SectionHeading{
+  font-size: 50px;
+}
+.Javaprogressbar2{
+  width: 40%;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius:20px;
+  
+}
+.Javaprogressbar1{
+  width: 50%;
+  height: 20px;
+}
+.Cprogressbar2{
+  width: 80%;
+  height: 20px;
+  
+}
+.Cprogressbar1{
+  width: 50%;
+  height: 20px; 
+}
+.Cppprogressbar2{
+  width: 80%;
+  height: 20px;
+  
+}
+.Cppprogressbar1{
+  width: 50%;
+  height: 20px; 
+}
+.Kotlinprogressbar2{
+  width: 50%;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius:20px;
+  
+}
+.Kotlinprogressbar1{
+  width: 50%;
+  height: 20px; 
+}
+.Androidprogressbar2{
+  width: 20%;
+  height: 20px;
+}
+.Androidprogressbar1{
+  width: 50%;
+  height: 20px;
+}
 
+.Htmlprogressbar2{
+  width: 90%;
+  height: 20px;
+}
+.Htmlprogressbar1{
+  width: 50%;
+  height: 20px;
+}
+
+.Cssprogressbar2{
+  width: 75%;
+  height: 20px;
+}
+.Cssprogressbar1{
+  width: 50%;
+  height: 20px; 
+}
+
+.Jsprogressbar2{
+  width: 20%;
+  height: 20px;
+}
+.Jsprogressbar1{
+  width: 50%;
+  height: 20px;  
+}
+.SkillName{
+  font-size: 30px;
+}
+
+/* styles for portfolio section */
+.PortfolioItemsContainer{
+  display: inline-block;
+  flex-direction: column;
+  padding: 30px 0px;
+}
+.PortfolioItem{
+  width: 600px;
+  height: 337px;
+  padding: 10px 0px;  
+}
+.PortfolioItem img{
+  width: 600px;
+  height: 337px;
+}
+/* styles for contact is section */
+.SocialIcon{
+  width: 60px;
+  height: 60px;
+  padding-left: 20px;
+  transition:ease 0.3s width,ease 0.3s height;
+}
+.SocialIcon:hover{
+  width: 75px;
+  height: 75px;
+}
+}
