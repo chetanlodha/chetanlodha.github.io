@@ -306,7 +306,9 @@ a:any-link:hover{
 /* media query */
 @media(max-width:992px){
   .Container{
-    margin-top:150px
+    margin-top:180px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   /* nav bar styles */
   nav{
@@ -319,7 +321,7 @@ a:any-link:hover{
     margin-left:0px;
   }
   .Brand h2{
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     margin:0px;
     margin-top: 20px;
@@ -329,10 +331,10 @@ a:any-link:hover{
     padding-left: 0px;
   }
   .NavigationItems li{
-    font-size: 32px;
+    font-size: 40px;
   }
   .NavigationItems li:hover{
-    font-size: 38px;
+    font-size: 50px;
   }
   /* profile styles */
   .ProfileImageContainer{
@@ -449,7 +451,7 @@ a:any-link:hover{
   height: 20px;  
 }
 .SkillName{
-  font-size: 30px;
+  font-size: 40px;
 }
 
 /* styles for portfolio section */
@@ -469,13 +471,13 @@ a:any-link:hover{
 }
 /* styles for contact is section */
 .SocialIcon{
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   padding-left: 20px;
   transition:ease 0.3s width,ease 0.3s height;
 }
 .SocialIcon:hover{
-  width: 75px;
-  height: 75px;
+  width: 95px;
+  height: 95px;
 }
 }
