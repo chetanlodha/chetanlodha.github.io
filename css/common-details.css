@@ -162,6 +162,7 @@ a:any-link:hover{
   .ItemImageContainer{
     width: 400px;
     height: 400px;
+    margin: auto;
   }
   .ItemImageContainer img{
     width: 400px;
