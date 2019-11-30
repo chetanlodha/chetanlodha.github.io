@@ -14,7 +14,6 @@ body{
   margin-left: 15%;
   margin-right:15%;
   text-align: center;
-  display: block;
 }
 
 /* Style for top navigation bar */
@@ -59,8 +58,6 @@ a:any-link:hover{
 
 /* styles for content container */
 .ContentContainer{
-  width: 100%;
-  height: 100%;
   margin-top: 40px;
   border-radius: 10px;
   background-color: #101010;
@@ -104,4 +101,56 @@ a:any-link:hover{
   width: 30%;
   background-color: #e0e0e0;
   border-color: #e0e0e0;
+}
+
+
+/* media query */
+@media(max-width:992px){
+  .Container{
+    margin-top:180px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  /* nav bar styles */
+  nav{
+    flex-direction: column;
+  }
+  .NavigationItems{
+    margin-right: 0px;
+  }
+  .Brand{
+    margin-left:0px;
+  }
+  .Brand h2{
+    font-size: 60px;
+    text-align: center;
+    margin:0px;
+    margin-top: 20px;
+  }
+  ul{
+    text-align: center;
+    padding-left: 0px;
+  }
+  .NavigationItems li{
+    font-size: 40px;
+  }
+  .NavigationItems li:hover{
+    font-size: 50px;
+  }
+  /* styles for content container */
+  .ContentContainer{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .HeadingImageContainer{
+    flex: 1;
+    margin:auto;
+  }
+.OverviewContainer{
+  padding-left: 0px;
+}
+.ListItems{
+  padding-left: 40px;
+}
+
 }
