@@ -306,7 +306,7 @@ a:any-link:hover{
 /* media query */
 @media(max-width:992px){
   .Container{
-    margin-top:180px;
+    margin-top:200px;
     margin-left: 6%;
     margin-right: 6%;
   }
@@ -346,6 +346,9 @@ a:any-link:hover{
     width: 620px;
     height: 800px;
     margin-top: -50px;
+  }
+  a:any-link{
+    color: #e0e0e0;
   }
   
 /* Styles for Profile Section */

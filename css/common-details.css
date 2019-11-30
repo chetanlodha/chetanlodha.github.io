@@ -137,6 +137,11 @@ a:any-link:hover{
   .NavigationItems li:hover{
     font-size: 50px;
   }
+  a:any-link{
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: ease 0.3s color;
+  }
   /* styles for content container */
   .ContentContainer{
     flex-direction: column;
