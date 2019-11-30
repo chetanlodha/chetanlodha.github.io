@@ -331,10 +331,10 @@ a:any-link:hover{
     padding-left: 0px;
   }
   .NavigationItems li{
-    font-size: 45px;
+    font-size: 40px;
   }
   .NavigationItems li:hover{
-    font-size: 55px;
+    font-size: 50px;
   }
   /* profile styles */
   .ProfileImageContainer{
