@@ -313,6 +313,10 @@ a:any-link:hover{
 #ExpandButton{
   font-size: 30px;
 }
+#ExpandButton:hover{
+  background-color: white;
+  opacity: 0.1;
+}
 /* styles form contact us section */
 .ContactUsContainer ul li{
   display: inline-block;
@@ -389,6 +393,7 @@ a:any-link:hover{
   }
   #ExpandButton{
     font-size: 50px;
+    font-weight: 800;
   }
   a:any-link{
     color: #e0e0e0;
