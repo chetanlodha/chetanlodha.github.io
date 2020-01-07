@@ -259,16 +259,15 @@ a:any-link:hover{
 /* styles for portfolio section */
 .PortfolioItemsContainer{
   flex-direction: column;
-  padding: 30px 0px;
+  padding: 0px 0px;
   justify-content: center;
 }
 .PortfolioItem{
   width: 500px;
   height: 281.25px;
   display: inline-block;
-  padding: 20px 10px;  
+  margin: 20px 10px;  
   transition:ease 0.3s filter;
-
 }
 .PortfolioItem img{
   width: 500px;
@@ -278,7 +277,39 @@ a:any-link:hover{
 .PortfolioItem:hover{
   filter: opacity(0.6);
 }
-
+#PortfolioItem3{
+  width: 100%;
+}
+.PortfolioItemNoImage{
+  width: 281px;
+  height: 281px;
+  padding: 0px 20px;
+  background-color: white;
+  color: #000000;
+  border-radius: 10px;
+  display: table-caption;
+}
+.PortfolioItemSpanContainer{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.PortfolioItemTextHeading{
+  color: #000000;
+  font-family: Calibri; 
+  font-size: 23px; 
+  font-style: normal; 
+  font-variant: normal; 
+}
+.PortfolioItemTextSubHeading{
+  color: #404040;
+  font-family: Calibri; 
+  font-size: 15px; 
+  font-style: normal; 
+  font-variant: normal; 
+  padding-top: 10px;
+}
 /* styles form contact us section */
 .ContactUsContainer ul li{
   display: inline-block;
