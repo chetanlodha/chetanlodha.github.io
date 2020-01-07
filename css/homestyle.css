@@ -310,6 +310,9 @@ a:any-link:hover{
   font-variant: normal; 
   padding-top: 10px;
 }
+#ExpandButton{
+  font-size: 30px;
+}
 /* styles form contact us section */
 .ContactUsContainer ul li{
   display: inline-block;
