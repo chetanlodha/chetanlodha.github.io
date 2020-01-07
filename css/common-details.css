@@ -3,7 +3,7 @@ html{
   background-color: #000000;
   color: rgba(255, 255, 255, 0.9);
   font-family: monospace;
-  font-size: 25px ;
+  font-size: 18px ;
 }
 body{
   margin: 0px 0px;
@@ -105,7 +105,7 @@ a:any-link:hover{
 
 
 /* media query */
-@media(min-width:320px) and (max-width:765px){
+@media(min-width:320px) and (max-width:992px){
   .Container{
     margin-top: 200px;
     margin-left: 6%;
