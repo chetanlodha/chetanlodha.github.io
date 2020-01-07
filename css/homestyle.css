@@ -381,6 +381,15 @@ a:any-link:hover{
     height: 800px;
     margin-top: -50px;
   }
+  .PortfolioItemTextHeading{
+    font-size: 35px; 
+  }
+  .PortfolioItemTextSubHeading{
+    font-size: 25px; 
+  }
+  #ExpandButton{
+    font-size: 50px;
+  }
   a:any-link{
     color: #e0e0e0;
   }
@@ -509,4 +518,5 @@ a:any-link:hover{
   width: 105px;
   height: 105px;
 }
+
 }
