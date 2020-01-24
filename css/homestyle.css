@@ -30,6 +30,9 @@ nav{
   margin-left: 30px;
   font-size: 17px;
 }
+.menuIcon{
+  display: none;
+}
 .NavigationItems{
   margin-right: 30px;
 }
@@ -340,32 +343,52 @@ a:any-link:hover{
 /* media query */
 @media(min-width:320px) and (max-width:992px) and (orientation:portrait){
   .Container{
-    margin-top:200px;
+    margin-top:180px;
     margin-left: 6%;
     margin-right: 6%;
+    box-sizing: border-box;
   }
   /* nav bar styles */
   nav{
-    flex-direction: column;
+    display: block;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
   }
   .NavigationItems{
     margin-right: 0px;
   }
   .Brand{
     margin-left:0px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: nowrap;
+    width: 100vw;
+  }
+  .menuIcon{
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    align-self: center;
+    padding-right: 40px;    
   }
   .Brand h2{
     font-size: 60px;
     text-align: center;
-    margin:0px;
-    margin-top: 20px;
+    flex: 1;
+    margin: auto;
+    padding: 50px 0px;
   }
+ 
   ul{
     text-align: center;
     padding-left: 0px;
   }
-  .NavigationItems li{
+
+  .NavigationItemsMedia li{
     font-size: 40px;
+    display: block;
+    padding-bottom: 80px;
   }
   .NavigationItems li:hover{
     font-size: 50px;

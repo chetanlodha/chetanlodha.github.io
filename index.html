@@ -9,19 +9,21 @@
 <body>
 
 
-  <nav>
+  <nav id="NavBar">
 
     <div class="Brand">
       <h2><a href="#">Portfolio</a></h2>
+      <img src="images/menu.svg" class="menuIcon" id="menuIcon" onclick="expandCollapseNavbar()">
     </div>
-
-    <ul class="NavigationItems">
-      <li><a href="#">Home</a></li>
-      <li><a href="#Profile">About</a></li> 
-      <li><a href="#Skills">Skills</a></li>
-      <li><a href="#Portfolio">Portfolio</a></li>
-      <li><a href="#ContactUs">Contact</a></li> 
-    </ul>
+    <div class="NavigationsItemsContainer" id="NavigationsItemsContainer">
+      <ul class="NavigationItems NavigationItemsMedia">
+        <li><a href="#">Home</a></li>
+        <li><a href="#Profile">About</a></li> 
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Portfolio">Portfolio</a></li>
+        <li><a href="#ContactUs">Contact</a></li> 
+      </ul>
+    </div>
 
   </nav>
 
@@ -253,23 +255,47 @@
 
   </div>
   <script>
-    var isExpanded = 1;
+    var isPortfolioExpanded = 1;
+    var isNavBarExpanded = 0;
+    var hamburgerMenuButton = document.getElementById("menuIcon");
+    var navigationItems = document.getElementById("NavigationsItemsContainer");
+    var navBar = document.getElementById("NavBar");
+    var ogColor = navBar.style.backgroundColor
+
+
     var expandButton = document.getElementById("ExpandButton");
     var moreProfileItems = document.getElementById("MoreProfileItems");
-    var fgOverlay = document.getElementById("fgoverlay");
-    expandButton.style.transform="rotate(0.5turn)"; 
+
+    expandButton.style.transform="rotate(0.5turn)";
+    if(screen.width >= 320 && screen.width <= 992)
+      navigationItems.style.display = "none";
+
+
     function expandProfileItems(){
-      if(isExpanded == 1){
+      if(isPortfolioExpanded == 1){
         expandButton.style.transform="rotate(0turn)"; 
-        isExpanded = 0;
+        isPortfolioExpanded = 0;
         moreProfileItems.style.display = "none";
+        navBar.style.backgroundColor = "black";
       }
       else{
         expandButton.style.transform="rotate(0.5turn)"; 
-        isExpanded = 1;
+        isPortfolioExpanded = 1;
         moreProfileItems.style.display = "inline-block";
+      }   
+    }
+
+
+    function expandCollapseNavbar(){
+      if(isNavBarExpanded == 0){
+        isNavBarExpanded = 1;
+        navigationItems.style.display = "block";
+        navBar.style.backgroundColor = "black";
+      } else {
+        isNavBarExpanded = 0;
+        navigationItems.style.display = "none";
+        navBar.style.backgroundColor = "#000000d8";
       }
-        
     }
   </script>
 </body>
