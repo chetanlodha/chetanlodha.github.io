@@ -313,10 +313,22 @@ a:any-link:hover{
   font-variant: normal; 
   padding-top: 10px;
 }
+
+/*Hack to fix layout on firefox*/
+@-moz-document url-prefix() {
+  .MorePortfolioItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 #ExpandButton{
   font-size: 30px;
 }
-/* styles form contact us section */
+
+
+/* Styles for contact us section */
 .ContactUsContainer ul li{
   display: inline-block;
   margin-bottom: 10px;

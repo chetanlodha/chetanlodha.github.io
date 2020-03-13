@@ -144,11 +144,11 @@
           </a>
         </div>
 
-        <div class="PortfolioMoreItems" onclick="expandProfileItems()" disabled>
+        <div class="PortfolioMoreItems" onclick="expandPortfolioItems()" disabled>
           <p id="ExpandButton">^</button>
         </div>
 
-        <div id="MoreProfileItems">
+        <div id="MorePortfolioItems" class="MorePortfolioItems">
 
           <a href="https://forum.xda-developers.com/android/themes/theme-upheavel-light-t3117894">
             <div class="PortfolioItem PortfolioItemNoImage">
@@ -255,37 +255,46 @@
 
   </div>
   <script>
+    //Flags for checking status of NavBar and MorePortfolioItems
     var isPortfolioExpanded = 1;
     var isNavBarExpanded = 0;
+
+    //Variables for accessing the elements of the document
     var hamburgerMenuButton = document.getElementById("menuIcon");
     var navigationItems = document.getElementById("NavigationsItemsContainer");
     var navBar = document.getElementById("NavBar");
-    var ogColor = navBar.style.backgroundColor
-
-
+    var ogColor = navBar.style.backgroundColor;
     var expandButton = document.getElementById("ExpandButton");
-    var moreProfileItems = document.getElementById("MoreProfileItems");
+    var morePortfolioItems = document.getElementById("MorePortfolioItems");
+
+    /*get the style.display of MorePortfolioItems to dynamically set the style according to the browser
+    "flex" for firefox and "inline-block" for chrome*/
+    var style = getComputedStyle(morePortfolioItems);
+    var portfolioDisplayStyle = style.display;
+
+    console.log(portfolioDisplayStyle);
+
 
     expandButton.style.transform="rotate(0.5turn)";
     if(screen.width >= 320 && screen.width <= 992)
       navigationItems.style.display = "none";
 
-
-    function expandProfileItems(){
+    //Fuction to expand and collapse MorePortfolioItems section
+    function expandPortfolioItems(){
       if(isPortfolioExpanded == 1){
         expandButton.style.transform="rotate(0turn)"; 
         isPortfolioExpanded = 0;
-        moreProfileItems.style.display = "none";
+        morePortfolioItems.style.display = "none";
         navBar.style.backgroundColor = "black";
       }
       else{
         expandButton.style.transform="rotate(0.5turn)"; 
         isPortfolioExpanded = 1;
-        moreProfileItems.style.display = "inline-block";
+        morePortfolioItems.style.display = portfolioDisplayStyle;
       }   
     }
 
-
+    //Function to expand and collapse the navigation bar
     function expandCollapseNavbar(){
       if(isNavBarExpanded == 0){
         isNavBarExpanded = 1;
