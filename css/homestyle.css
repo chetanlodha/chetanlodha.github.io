@@ -297,6 +297,10 @@ a:any-link:hover{
   color: #000000;
   border-radius: 10px;
   display: table-caption;
+  transition:ease 0.3s filter;
+}
+.PortfolioItemNoImage:hover{
+  filter: opacity(0.6);
 }
 .PortfolioItemSpanContainer{
   height: 100%;
