@@ -279,6 +279,9 @@ a:any-link:hover{
   height: 281.25px;
   border-radius: 10px;
 }
+.MorePortfolioItems{
+  margin-bottom: 20px;
+}
 .PortfolioItem:hover{
   filter: opacity(0.6);
 }
@@ -286,8 +289,9 @@ a:any-link:hover{
   width: 100%;
 }
 .PortfolioItemNoImage{
-  width: 281px;
-  height: 281px;
+  width: 210px;
+  height: 210px;
+  margin: 5px 5px;
   padding: 0px 20px;
   background-color: white;
   color: #000000;
