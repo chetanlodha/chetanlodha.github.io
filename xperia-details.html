@@ -7,17 +7,20 @@
   <title>Home</title>
 </head>
 <body>
-  <nav>
+  <nav id="NavBar">
     <div class="Brand">
-      <h2><a href="index.html#">Portfolio</a></h2>
+      <h2><a href="index.html">Portfolio</a></h2>
+      <img src="images/menu.svg" class="menuIcon" id="menuIcon" onclick="expandCollapseNavbar()">
     </div>
-    <ul class="NavigationItems">
-      <li><a href="index.html#">Home</a></li>
-      <li><a href="index.html#About">About</a></li> 
-      <li><a href="index.html#Skills">Skills</a></li>
-      <li><a href="index.html#Portfolio">Portfolio</a></li>
-      <li><a href="index.html#ContactUs">Contact</a></li> 
-    </ul>
+    <div class="NavigationsItemsContainer" id="NavigationsItemsContainer">
+      <ul class="NavigationItems NavigationItemsMedia">
+        <li><a href="index.html#">Home</a></li>
+        <li><a href="index.html#About">About</a></li> 
+        <li><a href="index.html#Skills">Skills</a></li>
+        <li><a href="index.html#Portfolio">Portfolio</a></li>
+        <li><a href="index.html#ContactUs">Contact</a></li> 
+      </ul>
+    </div>
   </nav>
 
   <div class="Container">
@@ -95,5 +98,6 @@
   </div>
   <br>
   <br>
+  <script src="scripts/script-common.js"></script>
 </body>
 </html>

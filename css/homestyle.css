@@ -359,7 +359,7 @@ a:any-link:hover{
 }
 
 /* media query */
-@media(min-width:320px) and (max-width:992px) and (orientation:portrait){
+@media(min-width:320px) and (max-width:992px){
   .Container{
     margin-top:180px;
     margin-left: 6%;
