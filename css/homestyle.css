@@ -445,20 +445,6 @@ a:any-link:hover{
     height: 800px;
     margin-top: -50px;
   }
-  .PortfolioItemNoImageMain{
-    width: 700px;
-    height: 393px;
-  }
-  .PortfolioItemTextHeading{
-    font-size: 35px; 
-  }
-  .PortfolioItemTextSubHeading{
-    font-size: 25px; 
-  }
-  #ExpandButton{
-    font-size: 50px;
-    font-weight: 800;
-  }
   a:any-link{
     color: #e0e0e0;
   }
@@ -473,6 +459,9 @@ a:any-link:hover{
 }
 
 /* styles for profile bio section */
+.ProfileBio{
+  margin: 0 1em;
+}
 .ProfileBioHello{
   font-size: 30px;
 }
@@ -489,6 +478,9 @@ a:any-link:hover{
 /* styles for skills section */
 .SectionHeading{
   font-size: 50px;
+}
+.SkillsContainer{
+  padding: 1em 1em;
 }
 .Javaprogressbar1{
   width: 60%;
@@ -575,6 +567,20 @@ a:any-link:hover{
 .PortfolioItem img{
   width: 700px;
   height: 393px;
+}
+.PortfolioItemNoImageMain{
+  width: 700px;
+  height: 393px;
+}
+.PortfolioItemTextHeading{
+  font-size: 35px; 
+}
+.PortfolioItemTextSubHeading{
+  font-size: 25px; 
+}
+#ExpandButton{
+  font-size: 50px;
+  font-weight: 800;
 }
 /* styles for contact is section */
 .SocialIcon{
