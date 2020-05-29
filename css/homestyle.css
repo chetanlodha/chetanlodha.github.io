@@ -263,9 +263,13 @@ a:any-link:hover{
 
 /* styles for portfolio section */
 .PortfolioItemsContainer{
-  flex-direction: column;
-  padding: 0px 0px;
-  justify-content: center;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .PortfolioItem{
   width: 500px;
@@ -281,6 +285,25 @@ a:any-link:hover{
 }
 .PortfolioItem:hover{
   filter: opacity(0.6);
+}
+.PortfolioItemNoImageMain{
+  width: 500px;
+  height: 281.25px;
+  display: inline-block;
+  margin: 20px 10px;  
+  background-color: white;
+  color: #000000;
+  border-radius: 10px;
+  font-size: 3em;
+  transition:ease 0.3s filter;
+}
+.PortfolioItemNoImageMain:hover{
+  filter: opacity(0.6);
+}
+.PortfolioItemNoImageMain span{
+  font-size: 0.5em;
+  text-transform: uppercase;
+  color: #202020;
 }
 .PortfolioItemNoImage{
   width: 281px;
@@ -418,6 +441,10 @@ a:any-link:hover{
     width: 620px;
     height: 800px;
     margin-top: -50px;
+  }
+  .PortfolioItemNoImageMain{
+    width: 700px;
+    height: 393px;
   }
   .PortfolioItemTextHeading{
     font-size: 35px; 
