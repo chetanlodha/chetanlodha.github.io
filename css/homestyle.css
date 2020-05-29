@@ -12,8 +12,8 @@ body{
 .Container{
   margin: 5px;
   margin-top: 80px;
-  margin-left: 15%;
-  margin-right:15%;
+  margin-left: 2em;
+  margin-right: 2em;
   text-align: center;
 }
 
@@ -64,7 +64,7 @@ a:any-link:hover{
 
 /* Styles for Profile Section */
 .Profile{
-  padding:30px 0px;
+  padding:  10px 0px;
   display: inline-block;
 }
 .ProfileImageContainer{
@@ -93,6 +93,9 @@ a:any-link:hover{
 }
 
 /* styles for profile bio section */
+.ProfileBio{
+  margin: 0 8em;
+}
 .ProfileBioHello{
   font-size: 30px;
   font-weight: bold;
@@ -122,7 +125,7 @@ a:any-link:hover{
   border-color: #e0e0e0;
 }
 .SkillsSection{
-  margin: 50px 0px;
+  margin: 3em 0;
 }
 .SectionHeading{
   text-transform: uppercase;
@@ -133,7 +136,7 @@ a:any-link:hover{
 .SkillsContainer{
   display: flex;
   flex-direction: row;
-  padding: 30px 0px;
+  padding: 1em 8em;
 }
 .Skills1{
   display: flex;
