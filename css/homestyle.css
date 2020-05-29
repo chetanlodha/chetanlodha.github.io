@@ -282,9 +282,6 @@ a:any-link:hover{
 .PortfolioItem:hover{
   filter: opacity(0.6);
 }
-#PortfolioItem3{
-  width: 100%;
-}
 .PortfolioItemNoImage{
   width: 281px;
   height: 281px;
