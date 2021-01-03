@@ -1,270 +1,97 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="author" description="Chetan Lodha">
-  <meta name="description" content="A personal website built using html and css presenting a mini bio, skills, portfolio and a section containing social links.">
-  <link rel="stylesheet" href="css/homestyle.css">
-  <link rel="shortcut icon" type="image/png" href="images/ico.png"/>
-  <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="author" description="Chetan Lodha">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" type="image/png" href="assets/icons/ico.png"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
 <body>
-
-
-  <nav id="NavBar">
-
-    <div class="Brand">
-      <h2><a href="#">Portfolio</a></h2>
-      <img src="images/menu.svg" class="menuIcon" id="menuIcon" onclick="expandCollapseNavbar()" alt="Expand/Collapse MorePortfolioItem">
-    </div>
-    <div class="NavigationsItemsContainer" id="NavigationsItemsContainer">
-      <ul class="NavigationItems NavigationItemsMedia">
-        <li><a href="#">Home</a></li>
-        <li><a href="#Profile">About</a></li> 
-        <li><a href="#Skills">Skills</a></li>
-        <li><a href="#Portfolio">Portfolio</a></li>
-        <li><a href="#ContactUs">Contact</a></li> 
-      </ul>
-    </div>
-
-  </nav>
-
-  <div class="Container">
-
-    <div class="Profile" id="Profile">
-      <div class="ProfileImageContainer">
-          <img src="images/1.webp" alt="Profile Image">
-      </div>
-      <div class="ProfileHeadingContainer">
-          <p class="NameHeading">
-            Chetan Lodha
-          </p>
-          <p class="NameSubHeading">Engineering Student</p>
-      </div>
-    </div>
-
-
-    <div class="ProfileBio">
-      <p class="ProfileBioHello">Hello,</p>
-      <p class="ProfileBioContent">I am Chetan Lodha from Silchar, Assam, India. I am currently pursuing 
-        <span class="Bold">B.Tech in Computer Science and Engineering</span> from 
-        <span class="Bold">College Of Computing Sciences and Information Technology, Teerthanker Mahaveer University</span>, Moradabad. I have worked on android projects involving development, reverse engineering projects and theming android apps using third party theme engines such as Substratum and CMTE.
-      </p>
-    </div>
-
-
-    <div class="SkillsSection" id="Skills">
-      <div class="HeadingContainer">
-        <hr class="HeadingSeperator">
-          <h2 class="SectionHeading">Technical Skills</h2>
-        <hr class="HeadingSeperator">
-      </div>
-
-      <div class="SkillsContainer">
-          <div class="Skills1">
-              <div id="java">
-                  <p class="SkillName">Java</p>
-                  <div class="Javaprogressbar1">
-                      <div class="Javaprogressbar2"></div>
-                  </div>
-              </div>
-              <div id="c">
-                  <p class="SkillName">C</p>
-                  <div class="Cprogressbar1">
-                      <div class="Cprogressbar2"></div>
-                  </div>
-              </div>
-              <div id="c++">
-                  <p class="SkillName">C++</p>
-                  <div class="Cppprogressbar1">
-                      <div class="Cppprogressbar2"></div>
-                  </div>
-              </div>
-              <div id="kotlin">
-                  <p class="SkillName">Kotlin</p>
-                  <div class="Kotlinprogressbar1">
-                      <div class="Kotlinprogressbar2"></div>
-                  </div>
-              </div>
+    <nav class="nav-container">
+        <div class="nav-content">
+            <div class="nav-header-container">
+                <h1 class="brand">Portfolio</h1>
+                <button class="menu-button" onclick="expandCollapseNavBar()">
+                    <img src="assets/icons/menu.svg">
+                </button>
             </div>
-      
-            <div class="Skills2">
-                <div id="android">
-                    <p class="SkillName">Android</p>
-                    <div class="Androidprogressbar1">
-                        <div class="Androidprogressbar2"></div>
-                    </div>
+            <ul class="nav-elements">
+                <a href="#Home"><li>Home</li></a>
+                <a href="#Work"><li>Work</li></a>
+                <a href="#Home"><li>About</li></a>
+                <a href="#Contact"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="profile-container" id="Home">
+            <div class="profile-content-container">
+                <div class="name">
+                    <h1>Hi! I am Chetan Lodha</h1>
+                    <h3>Engineering Student</h3>
                 </div>
-                <div id="html">
-                    <p class="SkillName">Html</p>
-                    <div class="Htmlprogressbar1">
-                        <div class="Htmlprogressbar2"></div>
-                    </div>
+                <div class="about">
+                    An enthusiastic Front-end web developer and Android Developer who enjoys designing and building alluring web and 
+                    native applications following modern Ul/UX standards with 2 projects currently live on Google Play Store with 98k+ downloads (collective).
                 </div>
-                <div id="css">
-                    <p class="SkillName">CSS</p>
-                    <div class="Cssprogressbar1">
-                        <div class="Cssprogressbar2"></div>
-                    </div>
-                </div>
-                <div id="javascript">
-                    <p class="SkillName">JavaScript</p>
-                    <div class="Jsprogressbar1">
-                        <div class="Jsprogressbar2"></div>
-                    </div>
+                <div class="resume-download">
+                    <a href="assets/pdf/Resume.pdf"><button class="resume-download-button">Download Resume</button></a>
                 </div>
             </div>
-          </div>
+            <div class="profile-image-container">
+                <img src="assets/images/1.jpg">
+            </div>
+        </div>
+        <h2 class="section-heading" id="Work"> WORK </h2>
+        <div class="Portfolio" id="Portfolio">
+            <div class="PortfolioItemsContainer">
+                <div class="PortfolioItem" id="PortfolioItem1">
+                    <a href="https://play.google.com/store/apps/details?id=substratum.theme.ice" target="_blank">
+                      <div class="PortfolioItemSpanContainer">
+                        <span class="PortfolioItemTextHeading">Ice</span>
+                        <span class="PortfolioItemTextSubHeading">Substratum Theme</span>
+                      </div>
+                    </a>
+                </div>
+                <div class="PortfolioItem" id="PortfolioItem2">
+                    <a href="https://play.google.com/store/apps/details?id=substratum.xperia.lockscreens" target="_blank">
+                      <div class="PortfolioItemSpanContainer">
+                        <span class="PortfolioItemTextHeading">Xperia Lockscreen Clock</span>
+                        <span class="PortfolioItemTextSubHeading">SUBSTRATUM THEME</span>
+                      </div>
+                    </a>
+                </div>
+                <div class="PortfolioItem" id="PortfolioItem3">
+                    <a href="https://chetanlodha.github.io" target="_blank">
+                      <div class="PortfolioItemSpanContainer">
+                        <span class="PortfolioItemTextHeading">Portfolio V1</span>
+                        <span class="PortfolioItemTextSubHeading">WEBSITE</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="PortfolioItem" id="PortfolioItem4">
+                    <a href="https://chetanlodha.github.io/Portfolio2" target="_blank">
+                    <div class="PortfolioItemSpanContainer">
+                        <span class="PortfolioItemTextHeading">Portfolio V2</span>
+                        <span class="PortfolioItemTextSubHeading">WEBSITE</span>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h2 class="section-heading"> Contact </h2>
+        <div class="ContactUsContainer" id="Contact">
+            <ul class="SocialIconContainer">
+              <li><a href="https://www.instagram.com/not_chetanbhagat/" target="_blank"><img src="assets/icons/instagram.png" alt="Instagram" class="SocialIcon"></a></li>
+              <li><a href="https://www.facebook.com/chetan.lodha.16" target="_blank"><img src="assets/icons/facebook.png" alt="Facebook" class="SocialIcon"></a></li>
+              <li><a href="https://t.me/larcs" target="_blank"><img src="assets/icons/telegram.png" alt="Telegram" class="SocialIcon"></a></li>
+              <li><a href="https://twitter.com/chetanlodha23" target="_blank"><img src="assets/icons/twitter.png" alt="Twitter" class="SocialIcon"></a></li>
+              <li><a href="https://github.com/chetanlodha" target="_blank"><img src="assets/icons/github.png" alt="Github" class="SocialIcon"></a></li>
+            </ul>
+        </div>    
     </div>
-
-
-    <div class="Portfolio" id="Portfolio">
-
-        <div class="HeadingContainer">
-            <hr class="HeadingSeperator">
-              <h2 class="SectionHeading">Portfolio</h2>
-            <hr class="HeadingSeperator">
-        </div>
-
-      <div class="PortfolioItemsContainer">
-
-        <div class="PortfolioItem" id="PortfolioItem1">
-          <a href="ice-details.html">
-            <img src="images/pi1.webp" alt="Ice">
-          </a>
-        </div>
-
-        <div class="PortfolioItem" id="PortfolioItem2">
-          <a href="xperia-details.html">
-            <img src="images/pi2.jpg" alt="Xperia Lockscreen Clock">
-          </a>
-        </div>
-
-        <div class="PortfolioItem" id="PortfolioItem3">
-          <a href="#">
-            <img src="images/pi3.webp" alt="Portfolio V1.0">
-          </a>
-        </div>
-
-        <div class="PortfolioItemNoImageMain">
-          <a href="https://chetanlodha.github.io/Portfolio2">
-            <div class="PortfolioItemSpanContainer">
-              <span class="PortfolioItemTextHeading">Portfolio</span>
-              <span class="PortfolioItemTextSubHeading">V2.0</span>
-            </div>
-          </a>
-        </div>
-      </div>
-        <div class="PortfolioMoreItems" onclick="expandPortfolioItems()" disabled>
-          <p id="ExpandButton">^</button>
-        </div>
-
-        <div id="MorePortfolioItems" class="MorePortfolioItems">
-
-          <a href="https://forum.xda-developers.com/android/themes/theme-upheavel-light-t3117894">
-            <div class="PortfolioItem PortfolioItemNoImage">
-              <div class="PortfolioItemSpanContainer">
-                <span class="PortfolioItemTextHeading">UPHEAVEL-LIGHT</span>
-                <span class="PortfolioItemTextSubHeading">A THEME FOR CMTE</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://forum.xda-developers.com/crossdevice-dev/android-one-crossdevice-development-themes-and-apps/mod-material-dark-settings-lmy470-t3091635">
-            <div class="PortfolioItem PortfolioItemNoImage">
-              <div class="PortfolioItemSpanContainer">
-                <span class="PortfolioItemTextHeading">MATERIAL DARK SETTINGS MOD</span>
-                <span class="PortfolioItemTextSubHeading">FOR MICROMAX CANVAS A1</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://forum.xda-developers.com/crossdevice-dev/android-one-crossdevice-development-themes-and-apps/mod-ambientdisplay-statusbarbattery-t3227216">
-            <div class="PortfolioItem PortfolioItemNoImage">
-              <div class="PortfolioItemSpanContainer">
-                <span class="PortfolioItemTextHeading">BATTERY % & AMBIENT DISPLAY MOD</span>
-                <span class="PortfolioItemTextSubHeading">FOR MICROMAX CANVAS A1</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://forum.xda-developers.com/android/development/rom-googlie-rom-canvas-lite-canvas3d-t2947271">
-            <div class="PortfolioItem PortfolioItemNoImage">
-              <div class="PortfolioItemSpanContainer">
-                <span class="PortfolioItemTextHeading">GOOGLIE ROM</span>
-                <span class="PortfolioItemTextSubHeading">FOR MICROMAX CANVAS LITE & CANVAS 3D</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://forum.xda-developers.com/android/development/patch-x-patch-canvas-lite-t2975081">
-            <div class="PortfolioItem PortfolioItemNoImage">
-              <div class="PortfolioItemSpanContainer">
-                <span class="PortfolioItemTextHeading">X-PATCH</span>
-                <span class="PortfolioItemTextSubHeading">FOR CANVAS LITE & CANVAS 3D</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://forum.xda-developers.com/android/development/rom-viprom-micromax-canvas-t2864642">
-            <div class="PortfolioItem PortfolioItemNoImage">
-              <div class="PortfolioItemSpanContainer">
-                <span class="PortfolioItemTextHeading">VIP ROM</span>
-                <span class="PortfolioItemTextSubHeading">FOR MICROMAX CANVAS LITE & CANVAS 3D</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://forum.xda-developers.com/android/development/rom-4-2-2-lenovo-rom-canvas-lite-t2835603">
-            <div class="PortfolioItem PortfolioItemNoImage">
-              <div class="PortfolioItemSpanContainer">
-                <span class="PortfolioItemTextHeading">LENOVO ROM</span>
-                <span class="PortfolioItemTextSubHeading">FOR MICROMAX CANVAS LITE & CANVAS 3D</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://forum.xda-developers.com/android/development/rom-hike-os-pandora-2-t2930866">
-            <div class="PortfolioItem PortfolioItemNoImage">
-              <div class="PortfolioItemSpanContainer">
-                <span class="PortfolioItemTextHeading">HIKE OS</span>
-                <span class="PortfolioItemTextSubHeading">A PORT FOR MICROMAX CANVAS LITE & CANVAS 3D</span>
-              </div>
-            </div>
-          </a>
-          
-          <a href="https://forum.xda-developers.com/android/themes/guide-how-to-replace-standered-platlogo-t2982978">
-            <div class="PortfolioItem PortfolioItemNoImage">
-              <div class="PortfolioItemSpanContainer">
-                <span class="PortfolioItemTextHeading">GUIDE TO REPLACE ANDROID PLATLOGO</span>
-                <span class="PortfolioItemTextSubHeading">FOR ALL DEVICES</span>
-              </div>
-            </div>
-          </a>
-          
-      
-      </div> 
-    </div>
-
-    
-    <div class="ContactUsContainer" id="ContactUs">
-      <hr class="HeadingSeperator">
-      <h2 class="SectionHeading">Get In Touch</h2>
-      <hr class="HeadingSeperator">
-      <br>
-      <ul class="SocialIconContainer">
-        <li><a href="https://www.instagram.com/not_chetanbhagat/" target="_blank"><img src="images/instagram.webp" alt="Instagram" class="SocialIcon" rel="noopener"></a></li>
-        <li><a href="https://www.facebook.com/chetan.lodha.16" target="_blank"><img src="images/facebook.webp" alt="Facebook" class="SocialIcon" rel="noopener"></a></li>
-        <li><a href="https://t.me/larcs" target="_blank"><img src="images/telegram.webp" alt="Telegram" class="SocialIcon" rel="noopener"></a></li>
-        <li><a href="https://twitter.com/chetanlodha23" target="_blank"><img src="images/twitter.webp" alt="Twitter" class="SocialIcon" rel="noopener"></a></li>
-        <li><a href="https://github.com/chetanlodha" target="_blank"><img src="images/github.webp" alt="Github" class="SocialIcon" rel="noopener"></a></li>
-      </ul>
-    </div>
-
-
-
-  </div>
-<script src="scripts/script.js"></script>
-<script src="scripts/script-common.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
