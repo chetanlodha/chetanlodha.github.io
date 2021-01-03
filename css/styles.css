@@ -1,52 +1,61 @@
-*{
+* {
     margin: 0 0;
     padding: 0 0;
     font-family: 'Jost', sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-.container{
+
+.container {
     margin: 0 2em;
 }
-.nav-container{
+
+.nav-container {
     z-index: 1;
     background: linear-gradient(180deg, white, transparent);
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;   
+    right: 0;
     transition: 0.5s ease;
 }
-.brand{
+
+.brand {
     flex: 1;
     padding: 1em;
 }
-.nav-elements{
+
+.nav-elements {
     padding: 2em;
     flex: 1;
     text-align: end;
     word-spacing: 3em;
 }
-.nav-elements li{
-    display: inline-block; /*makes li horizontal*/
+
+.nav-elements li {
+    display: inline-block;
+    /*makes li horizontal*/
 }
-.menu-button{
+
+.menu-button {
     display: none;
 }
-:any-link{
+
+:any-link {
     color: black;
     text-decoration: none;
     transition: 0.3s ease color;
 }
-:any-link:hover, :any-link:active{
+
+:any-link:hover, :any-link:active {
     color: rgb(110, 118, 185);
 }
-.profile-container{
+
+.profile-container {
     display: flex;
-    flex-direction: row;
-    width: fit-content;
-    height: fit-content;
+    flex-wrap: wrap;
     overflow: hidden;
     margin: 10vw;
     margin-top: 20vh;
@@ -56,18 +65,31 @@ html{
     padding: 2em;
     padding-bottom: 0;
 }
-.profile-content-container{
+
+.profile-content-container {
+    display: flex;
+    flex-direction: column;
+    flex: 0.9;
     padding: 1em;
+    padding-bottom: 3em;
 }
-.name{
+
+.name {
     padding: 1em 0;
 }
 
-.resume-download{   
+.resume-download {
+    height: 100%;
+    display: flex;
     margin-top: 2em;
     text-align: center;
 }
-.resume-download-button{
+
+.resume-download a{
+    margin: auto;
+}
+
+.resume-download-button {
     background-color: transparent;
     border-radius: 5px;
     padding: 1.5em;
@@ -79,28 +101,35 @@ html{
     transform: scale(1.1);
     transition: 0.5s ease border-radius, 0.5s ease background-color, 0.5s ease transform;
 }
-.resume-download-button:hover{
+
+.resume-download-button:hover {
     background-color: rgba(0, 0, 0, 0.253);
     border-radius: 20px;
     transform: scale(1);
 }
-.profile-image-container{
+
+.profile-image-container {
+    display: flex;
+    flex: 0.1;
+    justify-content: center;
+    align-items: flex-end;
     margin: 1em 1em 0 1em;
 }
-.profile-image-container img{
-    height: 360px;
-    width: 280px;
-    position: relative;
-    top:30px;
+
+.profile-image-container img {
+    max-height: 360px;
+    max-width: 240px;
     box-shadow: #686868 0px 20px 10px;
     border-top-right-radius: 0.5em;
     border-top-left-radius: 0.5em;
 }
-.section-heading{
+
+.section-heading {
     text-align: center;
     margin: 2em;
 }
-.PortfolioItemsContainer{
+
+.PortfolioItemsContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -108,112 +137,135 @@ html{
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-.PortfolioItem{
+}
+
+.PortfolioItem {
     width: 400px;
     height: 281.25px;
     display: inline-block;
-    margin: 20px 10px;  
+    margin: 20px 10px;
     border-radius: 5px;
     transform: scale(1);
     transition: 0.3s ease filter, 0.3s ease transform, 0.3s ease box-shadow;
 }
-.PortfolioItem:hover{
+
+.PortfolioItem:hover {
     filter: brightness(0.9);
     transform: scale(1.05);
     box-shadow: #bebebe 0px 5px 10px;
 }
-.PortfolioItemSpanContainer{
+
+.PortfolioItemSpanContainer {
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.PortfolioItemTextHeading{
+
+.PortfolioItemTextHeading {
     color: #000000;
-    font-size: 23px; 
+    font-size: 23px;
 }
-.PortfolioItemTextSubHeading{
+
+.PortfolioItemTextSubHeading {
     color: #606060;
-    font-family: Calibri; 
-    font-size: 15px; 
+    font-family: Calibri;
+    font-size: 15px;
     padding-top: 10px;
 }
-#PortfolioItem1{
+
+#PortfolioItem1 {
     background-color: rgb(147, 184, 252);
 }
-#PortfolioItem2{
+
+#PortfolioItem2 {
     background-color: #F5F5A8;
 }
-#PortfolioItem3{
+
+#PortfolioItem3 {
     background-color: rgb(130, 248, 167);
 }
-#PortfolioItem4{
+
+#PortfolioItem4 {
     background-color: rgb(253, 124, 117);
 }
-  /*Hack to fix layout on firefox*/
-  @-moz-document url-prefix() {
-    .MorePortfolioItems{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+
+/*Hack to fix layout on firefox*/
+
+@-moz-document url-prefix() {
+    .MorePortfolioItems {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-  }
-  /* Styles for contact us section */
-.ContactUsContainer ul li{
+}
+
+/* Styles for contact us section */
+
+.ContactUsContainer ul li {
     display: inline-block;
     margin-bottom: 10px;
     padding: 5px;
-  }
-  .SocialIcon{
+}
+
+.SocialIcon {
     width: 40px;
     height: 40px;
-    transition:ease 0.3s width,ease 0.3s height;
-  }
-  .SocialIcon:hover{
+    transition: ease 0.3s width, ease 0.3s height;
+}
+
+.SocialIcon:hover {
     width: 55px;
     height: 55px;
-  }
-  .SocialIconContainer{
+}
+
+.SocialIconContainer {
     padding-left: 0px;
     text-align: center;
     margin-bottom: 1em;
-  }
-  .SocialIconContainer li{
-    transition:ease 0.3s margin-top;
-  }
-  .SocialIconContainer li:hover{
+}
+
+.SocialIconContainer li {
+    transition: ease 0.3s margin-top;
+}
+
+.SocialIconContainer li:hover {
     margin-top: -20px;
-  }
+}
+
 /* Small devices (mobiles, 320px and up) */
+
 @media (max-width: 700px) {
-    .container{
+    .container {
         margin: 0 1em;
         margin-bottom: 5vh;
     }
-    .nav-container{
+    .nav-container {
         flex-direction: column;
         overflow: hidden;
     }
-    .nav-header-container{
+    .nav-header-container {
         display: flex;
         flex-direction: row;
         padding: 1em;
-        align-items: center; /*vertically center the header contents*/
+        align-items: center;
+        /*vertically center the header contents*/
     }
-    .brand{
-        padding: 0; /*override desktop padding values*/
+    .brand {
+        padding: 0;
+        /*override desktop padding values*/
         padding-left: 0.5em;
         flex: 1;
     }
-    .menu-button{
+    .menu-button {
         display: inline-block;
         transform: scale(0.45);
         background-color: transparent;
-        border: transparent; 
-        outline: 0; /* remove ugly border when button is in focus*/
+        border: transparent;
+        outline: 0;
+        /* remove ugly border when button is in focus*/
     }
-    .nav-elements{
+    .nav-elements {
         background-color: #f5f5f5;
         margin: 0 1em;
         padding: 0 2em;
@@ -222,26 +274,41 @@ html{
         border-radius: 10px;
         transition: 0.5s ease height;
     }
-    .nav-elements li{
-        display: block; /* override desktop layout to make li vertical*/
+    .nav-elements li {
+        display: block;
+        /* override desktop layout to make li vertical*/
     }
-    .profile-container{
+    .profile-container {
+        flex-direction: column;
         margin: auto;
         width: auto;
-        flex-direction: column;
         margin-top: 0;
     }
 
+    .profile-content-container{
+        padding: 0;
+        padding-bottom: 1.5em;
+    }
+
+    .profile-content-container .name, .profile-content-container .about {
+        font-size: 0.9em;
+    }
+
+    .profile-image-container img {
+        max-width: 100%;
+    }
 }
 
+
 /* Medium and Large devices (tablets and desktops: 701px and up) */
-@media (min-width: 701px) { 
-    .nav-container{
+
+@media (min-width: 701px) {
+    .nav-container {
         width: 100vw;
     }
-    .nav-content{
+    .nav-content {
         display: flex;
         flex-direction: row;
         width: 100vw;
     }
- }
+}
