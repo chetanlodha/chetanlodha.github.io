@@ -2,6 +2,7 @@
     margin: 0 0;
     padding: 0 0;
     font-family: 'Jost', sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 255, 0.1); /* transparent with keyword */
 }
 
 html {
@@ -49,6 +50,10 @@ html {
     transition: 0.3s ease color;
 }
 
+:any-link:focus, button:focus {
+    outline: 0;
+}
+
 :any-link:hover, :any-link:active {
     color: rgb(110, 118, 185);
 }
@@ -85,7 +90,7 @@ html {
     text-align: center;
 }
 
-.resume-download a{
+.resume-download a {
     margin: auto;
 }
 
@@ -127,22 +132,22 @@ html {
 .section-heading {
     text-align: center;
     margin: 2em;
+    margin-bottom: 1em;
 }
 
 .PortfolioItemsContainer {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    padding: 0px 0px;
+    padding: 1em 5px;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 .PortfolioItem {
-    width: 400px;
+    min-width: 400px;
     height: 281.25px;
-    display: inline-block;
+    /* display: inline-block; */
     margin: 20px 10px;
     border-radius: 5px;
     transform: scale(1);
@@ -150,9 +155,9 @@ html {
 }
 
 .PortfolioItem:hover {
-    filter: brightness(0.9);
+    /* filter: brightness(0.9); */
     transform: scale(1.05);
-    box-shadow: #bebebe 0px 5px 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2)
 }
 
 .PortfolioItemSpanContainer {
@@ -163,12 +168,13 @@ html {
 }
 
 .PortfolioItemTextHeading {
-    color: #000000;
+    color: #202020;
+    font-weight: bold;
     font-size: 23px;
 }
 
 .PortfolioItemTextSubHeading {
-    color: #606060;
+    color: #404040;
     font-family: Calibri;
     font-size: 15px;
     padding-top: 10px;
@@ -284,21 +290,29 @@ html {
         width: auto;
         margin-top: 0;
     }
-
-    .profile-content-container{
+    .profile-content-container {
         padding: 0;
         padding-bottom: 1.5em;
     }
-
     .profile-content-container .name, .profile-content-container .about {
         font-size: 0.9em;
     }
-
     .profile-image-container img {
         max-width: 100%;
     }
+    .PortfolioItemsContainer {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x proximity;
+        justify-content: flex-start;
+    }
+    .PortfolioItem {
+        scroll-snap-align: center;
+        min-width: 90%;
+        height: 220px;
+        margin: 20px 10px;
+    }
 }
-
 
 /* Medium and Large devices (tablets and desktops: 701px and up) */
 
