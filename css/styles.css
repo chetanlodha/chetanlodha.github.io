@@ -2,7 +2,8 @@
     margin: 0 0;
     padding: 0 0;
     font-family: 'Jost', sans-serif;
-    -webkit-tap-highlight-color: rgba(0, 0, 255, 0.1); /* transparent with keyword */
+    -webkit-tap-highlight-color: rgba(0, 0, 255, 0.1);
+    /* transparent with keyword */
 }
 
 html {
@@ -209,21 +210,26 @@ html {
 
 /* Styles for contact us section */
 
-.ContactUsContainer ul li {
+.ContactUsContainer .SocialIcon {
     display: inline-block;
     margin-bottom: 10px;
     padding: 5px;
-}
-
-.SocialIcon {
     width: 40px;
     height: 40px;
-    transition: ease 0.3s width, ease 0.3s height;
 }
 
-.SocialIcon:hover {
-    width: 55px;
-    height: 55px;
+.SocialIcon a img {
+    width: 100%;
+    object-fit: contain;
+    transition: ease 0.3s;
+}
+
+.SocialIcon:hover:nth-of-type(odd) a img {
+    transform: scale(1.2) translateY(-10px) rotate(-5deg);
+}
+
+.SocialIcon:hover:nth-of-type(even) a img {
+    transform: scale(1.2) translateY(-10px) rotate(5deg);
 }
 
 .SocialIconContainer {
