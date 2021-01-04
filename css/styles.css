@@ -33,6 +33,7 @@ html {
     flex: 1;
     text-align: end;
     word-spacing: 3em;
+    margin-right: 2em;
 }
 
 .nav-elements li {
@@ -279,6 +280,7 @@ html {
         line-height: 3;
         border-radius: 10px;
         transition: 0.5s ease height;
+        margin-right: initial;
     }
     .nav-elements li {
         display: block;

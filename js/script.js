@@ -1,11 +1,12 @@
-var navBarElements = document.querySelector(".nav-elements");
-var navHeader = document.querySelector(".nav-header-container");
-var navBar = document.querySelector(".nav-content");
-var container = document.querySelector(".container");
+let navBarElements = document.querySelector(".nav-elements");
+let navHeader = document.querySelector("nav");
+let container = document.querySelector(".container");
+let prevScrollpos = window.pageYOffset;
+let isExpanded = false;
+let prevWidth;
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
+window.onscroll = function () {
+  let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.querySelector(".nav-container").style.top = "0";
   } else {
@@ -14,26 +15,37 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
-// get maximum height of navbar
-var navBarExpandedHeight = navBarElements.clientHeight
-// set container margins
-container.style.marginTop = navHeader.clientHeight
-//collapse the navbar by default
-collapseNavBar()
-// function for collapsing the navbar
-function collapseNavBar(){
-    navBarElements.style.height = "0px"
-    isExpanded = false;
+window.onload = () => {
+  if (window.outerWidth < 701) {
+    collapseNavBar();
+    onResize();
+  }
+  document.querySelectorAll('.nav-elements a li').forEach(node => node.addEventListener('click', () => collapseNavBar()))
+}
+
+function collapseNavBar() {
+  navBarElements.style.height = "0px"
+  isExpanded = false;
 }
 //function for expanding the navbar
-function expandNavBar(){
-    navBarElements.style.height = navBarExpandedHeight
-    isExpanded = true;
+function expandNavBar() {
+  navBarElements.style.height = 144
+  isExpanded = true;
 }
 //function to control the navbar state
-function expandCollapseNavBar(){
-    if(isExpanded)
-        collapseNavBar();
-    else
-        expandNavBar();
+function expandCollapseNavBar() {
+  if (isExpanded)
+    collapseNavBar();
+  else
+    expandNavBar();
+}
+
+const setDimensions = () => container.style.marginTop = navHeader.clientHeight;
+
+const onResize = () => {
+  let width = window.outerWidth
+  setDimensions();
+  if (prevWidth > 701)
+    collapseNavBar();
+  prevWidth = width;
 }
