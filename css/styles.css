@@ -7,7 +7,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: beige;
+  background-color: whitesmoke;
 }
 
 .container {
@@ -283,8 +283,8 @@ button:focus {
 
 @media (max-width: 768px) {
   .container {
-    margin: 0 1em;
-    margin-bottom: 5vh;
+    margin: 1em 0;
+    margin-bottom: 1em;
   }
   .nav-container {
     flex-direction: column;
@@ -312,12 +312,12 @@ button:focus {
     /* remove ugly border when button is in focus*/
   }
   .nav-elements {
-    background-color: #f5f5f5;
-    margin: 0 1em;
+    background-color: white;
+    /* margin: 0 1em; */
     padding: 0 2em;
     text-align: left;
     line-height: 3;
-    border-radius: 10px;
+    border-radius: 2em;
     transition: 0.5s ease height;
     margin-right: initial;
   }
@@ -327,9 +327,7 @@ button:focus {
   }
   .profile-container {
     flex-direction: column;
-    margin: auto;
-    width: auto;
-    margin-top: 0;
+    margin: 22vw 0.3em 0 0.3em;
   }
   .profile-content-container {
     /* padding: 0; */

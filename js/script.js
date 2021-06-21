@@ -20,7 +20,7 @@ window.onload = () => {
     collapseNavBar();
     onResize();
   }
-  document.querySelectorAll('.nav-elements a li').forEach(node => node.addEventListener('click', () => collapseNavBar()))
+  document.querySelectorAll('.nav-elements li').forEach(node => node.addEventListener('click', () => collapseNavBar()))
 }
 
 function collapseNavBar() {
@@ -29,7 +29,7 @@ function collapseNavBar() {
 }
 //function for expanding the navbar
 function expandNavBar() {
-  navBarElements.style.height = 144
+  navBarElements.style.height = "144px"
   isExpanded = true;
 }
 //function to control the navbar state
