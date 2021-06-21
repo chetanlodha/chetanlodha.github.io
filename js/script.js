@@ -16,7 +16,7 @@ window.onscroll = function () {
 }
 
 window.onload = () => {
-  if (window.outerWidth < 701) {
+  if (window.innerWidth < 768) {
     collapseNavBar();
     onResize();
   }

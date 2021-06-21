@@ -1,9 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="author" description="Chetan Lodha">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chetan Lodha">
+    <meta name="description"
+        content="Chetan's portfolio website providing relevant information and showcasing works done by him">
     <link rel="shortcut icon" type="image/webp" href="assets/icons/ico.webp" />
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Open+Sans&display=swap"
@@ -17,82 +21,100 @@
             <div class="nav-header-container">
                 <h1 class="brand">Portfolio</h1>
                 <button class="menu-button" onclick="expandCollapseNavBar()">
-                    <img src="assets/icons/menu.svg">
+                    <img src="assets/icons/menu.svg" alt="Toggle nav bar">
                 </button>
             </div>
             <ul class="nav-elements">
-                <a href="#Home">
-                    <li>Home</li>
-                </a>
-                <a href="#Work">
-                    <li>Work</li>
-                </a>
-                <a href="#Contact">
-                    <li>Contact</li>
-                </a>
+                <li>
+                    <a href="#Home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#Work">
+                        Work
+                    </a>
+                </li>
+                <li>
+                    <a href="#Contact">
+                        Contact
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
     <div class="container">
         <div class="profile-container" id="Home">
+            <div class="profile-image-container">
+                <img src="assets/images/1.webp" width="250px" height="250px" alt="Chetan's picture">
+            </div>
             <div class="profile-content-container">
                 <div class="name">
-                    <h1>Hi! I am Chetan Lodha</h1>
-                    <h3>Engineering Student</h3>
+                    <h2>Hi! I am Chetan Lodha</h2>
+                    <p><strong>Engineering Student</strong></p>
                 </div>
                 <div class="about">
                     An enthusiastic Web Developer who enjoys designing and building alluring web applications following
                     modern Ul/UX standards.
                 </div>
                 <div class="resume-download">
-                    <a href="assets/pdf/Resume.pdf"><button class="resume-download-button">Download Resume</button></a>
+                    <a href="assets/pdf/Resume.pdf">
+                        <button class="resume-download-button">Download Resume</button>
+                    </a>
                 </div>
-            </div>
-            <div class="profile-image-container">
-                <img src="assets/images/1.webp">
             </div>
         </div>
-        <h2 class="section-heading" id="Work"> WORK </h2>
+        <h2 class="section-heading" id="Work">PROJECTS</h2>
         <div class="Portfolio" id="Portfolio">
             <div class="PortfolioItemsContainer">
-                <div class="PortfolioItem" id="PortfolioItem1">
-                    <a href="https://drive.google.com/drive/folders/1paStYMrNJu-yhWok5ormK3XqnUP3ue1Q?usp=sharing" target="_blank">
+                <div class="PortfolioItem">
+                    <a href="https://drive.google.com/drive/folders/1paStYMrNJu-yhWok5ormK3XqnUP3ue1Q?usp=sharing"
+                        target="_blank" rel="noreferrer">
                         <div class="PortfolioItemSpanContainer">
                             <span class="PortfolioItemTextHeading">Sharehere</span>
-                            <span class="PortfolioItemTextSubHeading">Website</span>
+                            <span class="PortfolioItemTextSubHeading">jQuery</span>
                         </div>
                     </a>
                 </div>
-                <div class="PortfolioItem" id="PortfolioItem2">
-                    <a href="https://chetan-quicknotes.herokuapp.com" target="_blank">
+                <div class="PortfolioItem">
+                    <a href="https://chetan-notes.netlify.app" target="_blank" rel="noreferrer">
                         <div class="PortfolioItemSpanContainer">
                             <span class="PortfolioItemTextHeading">Quick Notes</span>
-                            <span class="PortfolioItemTextSubHeading">Website</span>
+                            <span class="PortfolioItemTextSubHeading">MERN</span>
                         </div>
                     </a>
                 </div>
-                <div class="PortfolioItem" id="PortfolioItem3">
+                <div class="PortfolioItem">
+                    <a href="https://chetan-notes.netlify.app" target="_blank" rel="noreferrer">
+                        <div class="PortfolioItemSpanContainer">
+                            <span class="PortfolioItemTextHeading">Todo List</span>
+                            <span class="PortfolioItemTextSubHeading">React-Redux</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="PortfolioItem">
                     <a href="#">
                         <div class="PortfolioItemSpanContainer">
                             <span class="PortfolioItemTextHeading">Portfolio</span>
-                            <span class="PortfolioItemTextSubHeading">Website</span>
+                            <span class="PortfolioItemTextSubHeading">HTML-CSS</span>
                         </div>
                     </a>
                 </div>
-                <div class="PortfolioItem" id="PortfolioItem4">
-                    <a href="https://play.google.com/store/apps/details?id=substratum.theme.ice" target="_blank">
+                <div class="PortfolioItem">
+                    <a href="https://play.google.com/store/apps/details?id=substratum.theme.ice" target="_blank"
+                        rel="noreferrer">
                         <div class="PortfolioItemSpanContainer">
-                            <span class="PortfolioItemTextHeading">Ice</span>
-                            <span class="PortfolioItemTextSubHeading">Substratum Theme</span>
+                            <span class="PortfolioItemTextHeading">Ice Substratum Theme</span>
+                            <span class="PortfolioItemTextSubHeading">Android</span>
                         </div>
                     </a>
                 </div>
-                <div class="PortfolioItem" id="PortfolioItem1">
+                <div class="PortfolioItem">
                     <a href="https://play.google.com/store/apps/details?id=substratum.xperia.lockscreens"
-                        target="_blank">
+                        target="_blank" rel="noreferrer">
                         <div class="PortfolioItemSpanContainer">
                             <span class="PortfolioItemTextHeading">Xperia Lockscreen Clock</span>
-                            <span class="PortfolioItemTextSubHeading">Substratum Theme</span>
+                            <span class="PortfolioItemTextSubHeading">Android</span>
                         </div>
                     </a>
                 </div>
@@ -101,16 +123,31 @@
         <h2 class="section-heading"> Contact </h2>
         <div class="ContactUsContainer" id="Contact">
             <ul class="SocialIconContainer">
-                <li class="SocialIcon"><a href="https://www.instagram.com/not_chetanbhagat/" target="_blank"><img
-                            src="assets/icons/instagram.webp" alt="Instagram"></a></li>
-                <li class="SocialIcon"><a href="https://www.facebook.com/chetan.lodha.16" target="_blank"><img
-                            src="assets/icons/facebook.webp" alt="Facebook"></a></li>
-                <li class="SocialIcon"><a href="https://t.me/larcs" target="_blank"><img src="assets/icons/telegram.webp" alt="Telegram"
-                        ></a></li>
-                <li class="SocialIcon"><a href="https://twitter.com/chetanlodha23" target="_blank"><img src="assets/icons/twitter.webp"
-                            alt="Twitter"></a></li>
-                <li class="SocialIcon"><a href="https://github.com/chetanlodha" target="_blank"><img src="assets/icons/github.webp"
-                            alt="Github"></a></li>
+                <li class="SocialIcon">
+                    <a href="https://www.instagram.com/not_chetanbhagat/" target="_blank" rel="noreferrer">
+                        <img src="assets/icons/instagram.webp" width="40px" height="40px" alt="Instagram profile">
+                    </a>
+                </li>
+                <li class="SocialIcon">
+                    <a href="https://www.facebook.com/chetan.lodha.16" target="_blank" rel="noreferrer">
+                        <img src="assets/icons/facebook.webp" width="40px" height="40px" alt="Facebook profile">
+                    </a>
+                </li>
+                <li class="SocialIcon">
+                    <a href="https://t.me/larcs" target="_blank" rel="noreferrer">
+                        <img src="assets/icons/telegram.webp" width="40px" height="40px" alt="Telegram account">
+                    </a>
+                </li>
+                <li class="SocialIcon">
+                    <a href="https://twitter.com/chetanlodha23" target="_blank" rel="noreferrer">
+                        <img src="assets/icons/twitter.webp" width="40px" height="40px" alt="Twitter profile">
+                    </a>
+                </li>
+                <li class="SocialIcon">
+                    <a href="https://github.com/chetanlodha" target="_blank" rel="noreferrer">
+                        <img src="assets/icons/github.webp" width="40px" height="40px" alt="Github profile">
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
