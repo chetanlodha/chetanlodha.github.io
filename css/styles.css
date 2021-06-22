@@ -2,7 +2,7 @@
   margin: 0 0;
   padding: 0 0;
   font-family: "Jost", sans-serif;
-  -webkit-tap-highlight-color: rgba(0, 0, 255, 0.1);
+  -webkit-tap-highlight-color: rgba(64,97,78);
 }
 
 html {
@@ -30,16 +30,23 @@ html {
 }
 
 .nav-elements {
-  padding: 2em;
+  /* padding: 2em; */
   flex: 1;
   text-align: end;
-  word-spacing: 3em;
+  /* word-spacing: 3em; */
   margin-right: 2em;
 }
 
 .nav-elements li {
   display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  transition: 0.3s ease;
   /*makes li horizontal*/
+}
+
+.nav-elements li:hover {
+  background-color: rgb(137, 204, 166, 0.6);
 }
 
 .menu-button {
@@ -49,7 +56,7 @@ html {
 :any-link {
   color: black;
   text-decoration: none;
-  transition: 0.3s ease color;
+  transition: color 0.3s ease;
 }
 
 :any-link:focus,
@@ -59,7 +66,7 @@ button:focus {
 
 :any-link:hover,
 :any-link:active {
-  color: rgb(110, 118, 185);
+  color: rgb(76, 116, 93);
 }
 
 .profile-container {
@@ -71,7 +78,7 @@ button:focus {
   padding: 2em;
   /* background-color: #b865358c; */
   border-radius: 2em;
-  box-shadow: 0 5px 20px rgb(0,0,0,0.2)
+  box-shadow: 0 5px 20px rgb(0, 0, 0, 0.2);
 }
 
 @keyframes background-animation {
@@ -98,8 +105,15 @@ button:focus {
 }
 
 .name p {
-  color: rgb(137, 204, 166);
-  filter: contrast(0.6);
+  color: rgb(82, 124, 100);
+  margin-top: 0.5em;
+  font-size: 0.9em;
+}
+
+.name p strong {
+  padding: 0.5em 1.1em;
+  background-color: rgb(137, 204, 166, 0.6);
+  border-radius: 1em;
 }
 
 .resume-download {
@@ -114,22 +128,18 @@ button:focus {
 }
 
 .resume-download-button {
-  background-color: transparent;
+  color: rgb(76, 116, 93);
+  background-color: rgb(137, 204, 166, 0.6);
   border-radius: 2em;
   padding: 1.5em;
-  color: black;
+  font-weight: bold;
   box-shadow: none;
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
+  border: none;
   transform: scale(1.1);
-  transition: 0.5s ease border-radius, 0.5s ease background-color,
-    0.5s ease transform;
+  transition: 0.4s ease;
 }
 
 .resume-download-button:hover {
-  background-color: rgba(0, 0, 0, 0.253);
-  /* border-radius: 20px; */
   transform: scale(1);
 }
 
@@ -349,14 +359,14 @@ button:focus {
   .PortfolioItemsContainer {
     flex-wrap: nowrap;
     overflow-x: auto;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
     justify-content: flex-start;
   }
   .PortfolioItem {
     scroll-snap-align: center;
-    min-width: 90%;
-    height: 300px;
-    margin: 20px 10px;
+    min-width: 95%;
+    height: 250px;
+    margin: 20px 5px;
   }
 }
 
@@ -369,6 +379,7 @@ button:focus {
   .nav-content {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100vw;
   }
 }

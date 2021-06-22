@@ -45,7 +45,7 @@ const setDimensions = () => container.style.marginTop = navHeader.clientHeight;
 const onResize = () => {
   let width = window.outerWidth
   setDimensions();
-  if (prevWidth > 701)
+  if (prevWidth < 768)
     collapseNavBar();
   prevWidth = width;
 }
