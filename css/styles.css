@@ -2,7 +2,7 @@
   margin: 0 0;
   padding: 0 0;
   font-family: "Jost", sans-serif;
-  -webkit-tap-highlight-color: rgba(64,97,78);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
 }
 
 html {
@@ -81,13 +81,30 @@ button:focus {
   box-shadow: 0 5px 20px rgb(0, 0, 0, 0.2);
 }
 
-@keyframes background-animation {
-  0% {
-    background-position: 0% 50%;
-  }
+.profile-image-container {
+  display: flex;
+  flex: 0.1;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 1em 1em 0 1em;
+}
 
-  100% {
-    background-position: 100% 100%;
+.profile-image-container img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
+  animation: animateImageIn 1s ease forwards;
+}
+
+@keyframes animateImageIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -102,18 +119,30 @@ button:focus {
 
 .name {
   padding: 1em 0;
+  opacity: 0;
+  transform: translateY(5px);
+  animation: animateTextIn 0.5s ease 0.8s forwards;
 }
 
 .name p {
   color: rgb(82, 124, 100);
   margin-top: 0.5em;
   font-size: 0.9em;
+  opacity: 0;
+  transform: translateY(5px);
+  animation: animateTextIn 0.5s ease 1.2s forwards;
 }
 
 .name p strong {
   padding: 0.5em 1.1em;
   background-color: rgb(137, 204, 166, 0.6);
   border-radius: 1em;
+}
+
+.about {
+  opacity: 0;
+  transform: translateY(5px);
+  animation: animateTextIn 0.5s ease 1.5s forwards;
 }
 
 .resume-download {
@@ -135,29 +164,21 @@ button:focus {
   font-weight: bold;
   box-shadow: none;
   border: none;
-  transform: scale(1.1);
   transition: 0.4s ease;
+  opacity: 0;
+  transform: translateY(5px);
+  animation: animateTextIn 0.5s ease 1.9s forwards;
 }
 
 .resume-download-button:hover {
-  transform: scale(1);
+  transform: scale(0.95);
 }
 
-.profile-image-container {
-  display: flex;
-  flex: 0.1;
-  justify-content: center;
-  align-items: flex-end;
-  margin: 1em 1em 0 1em;
-}
-
-.profile-image-container img {
-  height: 250px;
-  width: 250px;
-  object-fit: cover;
-  object-position: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
+@keyframes animateTextIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .section-heading {
@@ -167,9 +188,9 @@ button:focus {
 }
 
 .PortfolioItemsContainer {
+  min-height: 30vh;
   display: flex;
   flex-wrap: wrap;
-  padding: 1em 5px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -187,7 +208,17 @@ button:focus {
   background-blend-mode: color-dodge;
   background-size: 500% 500%;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: scale(0.9) translateY(10px);
+  animation: animateItemIn 1s ease calc(var(--order) * 150ms) forwards;
   transition: 0.3s ease filter, 0.3s ease transform, 0.3s ease box-shadow;
+}
+
+@keyframes animateItemIn {
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
 .PortfolioItem:hover {
