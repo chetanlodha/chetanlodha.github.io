@@ -354,13 +354,14 @@ button:focus {
   }
   .nav-elements {
     background-color: white;
-    /* margin: 0 1em; */
-    padding: 0 2em;
+    margin: 0 0 1em 0;
+    /* margin-right: initial; */
+    padding: 0 1em;
     text-align: left;
     line-height: 3;
     border-radius: 2em;
-    transition: 0.5s ease height;
-    margin-right: initial;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    transition: max-height 0.7s ease !important;
   }
   .nav-elements li {
     display: block;
@@ -368,7 +369,7 @@ button:focus {
   }
   .profile-container {
     flex-direction: column;
-    margin: 22vw 0.3em 0 0.3em;
+    margin: 5em 0.3em 0 0.3em;
   }
   .profile-content-container {
     /* padding: 0; */

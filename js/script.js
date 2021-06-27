@@ -7,20 +7,20 @@ let prevWidth;
 
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+  if (prevScrollpos > currentScrollPos)
     document.querySelector(".nav-container").style.top = "0";
-  } else {
+  else
     document.querySelector(".nav-container").style.top = "-100px";
-  }
+
   prevScrollpos = currentScrollPos;
 }
 
 window.onload = () => {
-  if (window.innerWidth < 768) {
-    collapseNavBar();
-    onResize();
-  }
-  document.querySelectorAll('.nav-elements li').forEach(node => node.addEventListener('click', () => collapseNavBar()))
+  if (window.innerWidth < 768)
+    onResize()
+
+  document.querySelectorAll('.nav-elements li').forEach(node => node.addEventListener('click', () => window.innerWidth < 768 ? collapseNavBar() : null))
+
   setTimeout(() => {
     document.querySelector('.PortfolioItemsContainer').innerHTML = `
       <div class="PortfolioItem" style="--order: 1">
@@ -78,12 +78,12 @@ window.onload = () => {
 }
 
 function collapseNavBar() {
-  navBarElements.style.height = "0px"
+  navBarElements.style.maxHeight = "0px"
   isExpanded = false;
 }
 //function for expanding the navbar
 function expandNavBar() {
-  navBarElements.style.height = "144px"
+  navBarElements.style.maxHeight = "500px"
   isExpanded = true;
 }
 //function to control the navbar state
@@ -94,12 +94,9 @@ function expandCollapseNavBar() {
     expandNavBar();
 }
 
-const setDimensions = () => container.style.marginTop = navHeader.clientHeight;
-
 const onResize = () => {
-  let width = window.outerWidth
-  setDimensions();
-  if (prevWidth < 768)
+  if (window.innerWidth < 768)
     collapseNavBar();
-  prevWidth = width;
+  else
+    expandNavBar();
 }
