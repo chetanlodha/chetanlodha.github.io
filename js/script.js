@@ -24,7 +24,7 @@ window.onload = () => {
   setTimeout(() => {
     document.querySelector('.PortfolioItemsContainer').innerHTML = `
       <div class="PortfolioItem" style="--order: 1">
-          <a href="https://sharehere.ga"
+          <a href="https://sharehere-react.netlify.app"
               target="_blank" rel="noreferrer">
               <div class="PortfolioItemSpanContainer">
                   <span class="PortfolioItemTextHeading">Sharehere</span>
